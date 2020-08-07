@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Egoal</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="4.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.1.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Egoal.Domain\Egoal.Domain.csproj" />
+    <ProjectReference Include="..\Egoal.Infrastructure\Egoal.Infrastructure.csproj" />
+    <ProjectReference Include="..\Egoal.Model\Egoal.Model.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.ABCPay\Egoal.Payment.ABCPay.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.Alipay\Egoal.Payment.Alipay.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.SaobePay\Egoal.Payment.SaobePay.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.WeChatPay\Egoal.Payment.WeChatPay.csproj" />
+    <ProjectReference Include="..\Egoal.Redis\Egoal.Redis.csproj" />
+    <ProjectReference Include="..\Egoal.WeChat\Egoal.WeChat.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>

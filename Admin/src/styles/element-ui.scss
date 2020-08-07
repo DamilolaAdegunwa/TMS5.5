@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+.el-date-editor--datetimerange.el-input,
+.el-date-editor--datetimerange.el-input__inner {
+  width: 100%;
+}
+
+.el-date-editor--daterange.el-input,
+.el-date-editor--daterange.el-input__inner,
+.el-date-editor--timerange.el-input,
+.el-date-editor--timerange.el-input__inner {
+  width: 100%;
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 100%;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-form-item--mini.el-form-item,
+.el-form-item--small.el-form-item {
+  margin-bottom: 13px;
+}
+
+.el-input-number--small {
+  width: 100%;
+}
+
+.el-table th {
+  background-color: rgb(240, 242, 245);
+}
+
+.el-table--small td {
+  padding: 4px 0;
+}
+
+.tox .tox-statusbar__branding {
+  display: none;
+}

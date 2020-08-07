@@ -1,0 +1,146 @@
+@import "./variables.scss";
+@import "./element-ui.scss";
+@import "./transition.scss";
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+a,
+a:active,
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: $content-space;
+  min-height: $content-height;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.search-content {
+  height: $content-height;
+}
+
+#nprogress .bar {
+  background: $blue !important;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px $blue, 0 0 5px $blue !important;
+}
+
+.search-box {
+  margin-bottom: 10px;
+  flex-shrink: 0;
+
+  .el-row--flex {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .col-xl {
+      width: 20%;
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .col-2xl {
+      width: 40%;
+    }
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+
+    .text {
+      color: $blue;
+      margin-left: 10px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .arrow {
+      color: $blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .search-box-collapse {
+    .el-col:nth-child(n + 3) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and(min-width:768px) and (max-width: 991px) {
+  .search-box-collapse {
+    .el-col:nth-child(n + 5) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and(min-width:992px) and (max-width: 1199px) {
+  .search-box-collapse {
+    .el-col:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and(min-width:1200px) and (max-width: 1919px) {
+  .search-box-collapse {
+    .el-col:nth-child(n + 9) {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .search-box-collapse {
+    .el-col:nth-child(n + 11) {
+      display: none;
+    }
+  }
+}
+
+.chart-box {
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.table-box {
+  flex: 1 1;
+  overflow: hidden;
+}
+
+.page-box {
+  flex-shrink: 0;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.iframe {
+  width: 100%;
+  border: none;
+  flex: 1;
+}
+
+.hidden-iframe {
+  height: 0;
+  border: none;
+}

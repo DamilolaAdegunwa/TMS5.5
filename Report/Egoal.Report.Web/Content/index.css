@@ -1,0 +1,15 @@
+﻿body {
+    margin: 1px;
+}
+
+.page {
+    margin: 0 auto;
+}
+
+.no-data {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    height: 90vh;
+    line-height: 90vh;
+}

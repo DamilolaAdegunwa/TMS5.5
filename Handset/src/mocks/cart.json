@@ -1,0 +1,47 @@
+[
+  {
+    "name": "学生票1",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "团体票1",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "老人票1",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "学生票2",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "团体票2",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "老人票2",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "学生票3",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "团体票3",
+    "price": 4.8,
+    "quantity": 40
+  },
+  {
+    "name": "老人票3",
+    "price": 4.8,
+    "quantity": 40
+  }
+]
